@@ -13,6 +13,7 @@ dist-ssr
 *.local
 fix.txt
 *.mp4
+.env
 
 # Editor directories and files
 .vscode/*
