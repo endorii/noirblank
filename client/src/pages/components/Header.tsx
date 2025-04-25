@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 import AccountIcon from "../../assets/svg/account.svg?react";
 import HeartIcon from "../../assets/svg/heart.svg?react";
@@ -13,6 +13,12 @@ import { ICategory } from "../../types/dbtypes";
 
 const Header = () => {
     const dispatch = useAppDispatch();
+
+    const navItems = [
+        { to: "cart", Icon: CartIcon, className: "stroke-black" },
+        { to: "likes", Icon: HeartIcon, className: "stroke-black" },
+        { to: "account", Icon: AccountIcon, className: "fill-black" },
+    ];
 
     useEffect(() => {
         dispatch(fetchCategories());
@@ -64,21 +70,13 @@ const Header = () => {
                 </div>
 
                 <ul className="flex gap-[30px]">
-                    <li>
-                        <a href="">
-                            <CartIcon className="stroke-black w-7 h-7" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <HeartIcon className="stroke-black w-7 h-7" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <AccountIcon className=" fill-black w-7 h-7" />
-                        </a>
-                    </li>
+                    {navItems.map(({ to, Icon, className }) => (
+                        <li key={to}>
+                            <Link to={to}>
+                                <Icon className={`${className} w-6 h-6`} />
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </header>
 

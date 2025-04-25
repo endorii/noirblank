@@ -8,20 +8,23 @@ import {
 } from "react-router";
 import { StrictMode } from "react";
 import App from "./pages/App";
-// import ManCategory from "./pages/he/ManCategory";
 import ChooseCategory from "./pages/components/ChooseCategory";
-// import HomeCategory from "./pages/home/HomeCategory";
-// import KidsCategory from "./pages/kids/KidsCategory";
-// import WomanCategory from "./pages/she/WomanCategory";
 import { Provider } from "react-redux";
 import store from "./store/store";
+import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import Cart from "./pages/cart/Cart";
+import Likes from "./pages/likes/Likes";
+import Account from "./pages/account/Account";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
             <Route path="/" element={<App />}>
                 <Route path="c" element={<ChooseCategory />} />
-                {/* <Route path="с/:categoryName" element={<ProductsItem />} /> */}
+                <Route path="c/:categoryName" element={<CategoryPage />} />
+                <Route path="cart" element={<Cart />} />
+                <Route path="likes" element={<Likes />} />
+                <Route path="account" element={<Account />} />
             </Route>
         </>
     )
