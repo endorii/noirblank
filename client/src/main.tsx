@@ -11,17 +11,22 @@ import App from "./pages/App";
 import ChooseCategory from "./pages/components/ChooseCategory";
 import { Provider } from "react-redux";
 import store from "./store/store";
-import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import Cart from "./pages/cart/Cart";
 import Likes from "./pages/likes/Likes";
 import Account from "./pages/account/Account";
+import SubcategoryPage from "./pages/CategoryPage/CategoryPage";
+import CollectionPage from "./pages/CollectionPage/CollectionPage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
             <Route path="/" element={<App />}>
                 <Route path="c" element={<ChooseCategory />} />
-                <Route path="c/:categoryName" element={<CategoryPage />} />
+                <Route path="c/:collectionName" element={<CollectionPage />} />
+                <Route
+                    path="c/:collectionName/:categoryName"
+                    element={<SubcategoryPage />}
+                />
                 <Route path="cart" element={<Cart />} />
                 <Route path="likes" element={<Likes />} />
                 <Route path="account" element={<Account />} />

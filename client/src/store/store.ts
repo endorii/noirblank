@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import categoriesSlice from "./slices/categories.slice";
+import categoriesSlice from "./slices/collections.slice";
 import userSlice from "./slices/user.slice";
 
 const rootReducer = {
-    categories: categoriesSlice,
+    collections: categoriesSlice,
     user: userSlice,
 };
 

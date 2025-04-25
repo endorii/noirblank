@@ -1,8 +1,8 @@
-import { ICategory } from "../types/dbtypes";
+import { ICollection } from "../types/dbtypes";
 
 export interface RootState {
-    categories: {
-        categories: ICategory[];
+    collections: {
+        collections: ICollection[];
         loading: boolean;
         error: string | null;
     };

@@ -1,570 +1,570 @@
 {
-  "categories": [
-    {
-        "name": "Він",
-        "path": "c/he",
-        "subcategories": [
-          {
-            "name": "Новинки",
-            "path": "new",
-            "subcategories": [
-              {
-                "name": "Взуття",
-                "path": "shoes",
-                "products": [
-                  {
-                    "name": "Nike Air Force 1",
-                    "brand": "Nike",
-                    "price": 3200,
-                    "image": "/images/air-force-1.jpg"
-                  }
-                ]
-              },
-              {
-                "name": "Одяг",
-                "path": "clothes",
-                "products": [
-                  {
-                    "name": "Топ H&M",
-                    "brand": "H&M",
-                    "price": 600,
-                    "image": "/images/hm-top.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Одяг",
-            "path": "clothes",
-            "subcategories": [
-              {
-                "name": "Сорочки",
-                "path": "shirts",
-                "products": [
-                  {
-                    "name": "Сорочка Zara",
-                    "brand": "Zara",
-                    "price": 1200,
-                    "image": "/images/zara-shirt.jpg"
-                  }
-                ]
-              },
-              {
-                "name": "Джинси",
-                "path": "jeans",
-                "products": [
-                  {
-                    "name": "Джинси Levi's",
-                    "brand": "Levi's",
-                    "price": 2400,
-                    "image": "/images/levis-jeans.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Взуття",
-            "path": "shoes",
-            "subcategories": [
-              {
-                "name": "Кросівки",
-                "path": "sneakers",
-                "products": [
-                  {
-                    "name": "Nike Air Max",
-                    "brand": "Nike",
-                    "price": 3500,
-                    "image": "/images/nike-air-max.jpg"
-                  },
-                  {
-                    "name": "Adidas Ultraboost",
-                    "brand": "Adidas",
-                    "price": 3900,
-                    "image": "/images/adidas-ultraboost.jpg"
-                  }
-                ]
-              },
-              {
-                "name": "Чоботи",
-                "path": "boots",
-                "products": [
-                  {
-                    "name": "Чоботи Timberland",
-                    "brand": "Timberland",
-                    "price": 4000,
-                    "image": "/images/timberland-boots.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Аксесуари",
-            "path": "accessories",
-            "subcategories": [
-              {
-                "name": "Годинники",
-                "path": "watches",
-                "products": [
-                  {
-                    "name": "Годинник Casio",
-                    "brand": "Casio",
-                    "price": 1500,
-                    "image": "/images/casio-watch.jpg"
-                  }
-                ]
-              },
-              {
-                "name": "Сумки",
-                "path": "bags",
-                "products": [
-                  {
-                    "name": "Сумка Gucci",
-                    "brand": "Gucci",
-                    "price": 12000,
-                    "image": "/images/gucci-bag.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Спорт",
-            "path": "sports",
-            "subcategories": [
-              {
-                "name": "Футболки",
-                "path": "tshirts",
-                "products": [
-                  {
-                    "name": "Футболка Adidas",
-                    "brand": "Adidas",
-                    "price": 800,
-                    "image": "/images/adidas-tshirt.jpg"
-                  }
-                ]
-              },
-              {
-                "name": "Кросівки",
-                "path": "running-shoes",
-                "products": [
-                  {
-                    "name": "Кросівки для бігу Nike",
-                    "brand": "Nike",
-                    "price": 3500,
-                    "image": "/images/nike-running.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Преміум",
-            "path": "premium",
-            "subcategories": [
-              {
-                "name": "Одяг",
-                "path": "clothes",
-                "products": [
-                  {
-                    "name": "Куртка Burberry",
-                    "brand": "Burberry",
-                    "price": 20000,
-                    "image": "/images/burberry-jacket.jpg"
-                  }
-                ]
-              },
-              {
-                "name": "Аксесуари",
-                "path": "accessories",
-                "products": [
-                  {
-                    "name": "Сумка Louis Vuitton",
-                    "brand": "Louis Vuitton",
-                    "price": 25000,
-                    "image": "/images/louis-vuitton-bag.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Бренди",
-            "path": "brands",
-            "subcategories": [
-              {
-                "name": "Nike",
-                "path": "nike",
-                "products": [
-                  {
-                    "name": "Nike Air Max",
-                    "brand": "Nike",
-                    "price": 3500,
-                    "image": "/images/nike-air-max.jpg"
-                  }
-                ]
-              },
-              {
-                "name": "Adidas",
-                "path": "adidas",
-                "products": [
-                  {
-                    "name": "Adidas Ultraboost",
-                    "brand": "Adidas",
-                    "price": 3900,
-                    "image": "/images/adidas-ultraboost.jpg"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Вона",
-        "path": "c/she",
-        "subcategories": [
-          {
-            "name": "Новинки",
-            "path": "new",
-            "subcategories": [
-              {
-                "name": "Взуття",
-                "path": "shoes",
-                "products": [
-                  {
-                    "name": "Nike Air Force 1",
-                    "brand": "Nike",
-                    "price": 3200,
-                    "image": "/images/air-force-1.jpg"
-                  }
-                ]
-              },
-              {
-                "name": "Одяг",
-                "path": "clothes",
-                "products": [
-                  {
-                    "name": "Топ H&M",
-                    "brand": "H&M",
-                    "price": 600,
-                    "image": "/images/hm-top.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Одяг",
-            "path": "clothes",
-            "subcategories": [
-              {
-                "name": "Сукні",
-                "path": "dresses",
-                "products": [
-                  {
-                    "name": "Плаття Mango",
-                    "brand": "Mango",
-                    "price": 2200,
-                    "image": "/images/mango-dress.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Аксесуари",
-            "path": "accessories",
-            "subcategories": [
-              {
-                "name": "Сумки",
-                "path": "bags",
-                "products": [
-                  {
-                    "name": "Сумка Gucci",
-                    "brand": "Gucci",
-                    "price": 12000,
-                    "image": "/images/gucci-bag.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Спорт",
-            "path": "sports",
-            "subcategories": [
-              {
-                "name": "Футболки",
-                "path": "tshirts",
-                "products": [
-                  {
-                    "name": "Футболка Adidas",
-                    "brand": "Adidas",
-                    "price": 800,
-                    "image": "/images/adidas-tshirt.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Преміум",
-            "path": "premium",
-            "subcategories": [
-              {
-                "name": "Одяг",
-                "path": "clothes",
-                "products": [
-                  {
-                    "name": "Куртка Burberry",
-                    "brand": "Burberry",
-                    "price": 20000,
-                    "image": "/images/burberry-jacket.jpg"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Бренди",
-            "path": "brands",
-            "subcategories": [
-              {
-                "name": "Nike",
-                "path": "nike",
-                "products": [
-                  {
-                    "name": "Nike Air Max",
-                    "brand": "Nike",
-                    "price": 3500,
-                    "image": "/images/nike-air-max.jpg"
-                  }
-                ]
-              },
-              {
-                "name": "Adidas",
-                "path": "adidas",
-                "products": [
-                  {
-                    "name": "Adidas Ultraboost",
-                    "brand": "Adidas",
-                    "price": 3900,
-                    "image": "/images/adidas-ultraboost.jpg"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-    {
-      "name": "Діти",
-      "path": "c/kids",
-      "subcategories": [
+    "collections": [
         {
-          "name": "Новинки",
-          "path": "new",
-          "subcategories": [
-            {
-              "name": "Взуття",
-              "path": "shoes",
-              "products": [
+            "name": "Він",
+            "path": "c/he",
+            "categories": [
                 {
-                  "name": "Кросівки Puma Kids",
-                  "brand": "Puma",
-                  "price": 950,
-                  "image": "/images/puma-kids.jpg"
-                }
-              ]
-            },
-            {
-              "name": "Одяг",
-              "path": "clothes",
-              "products": [
+                    "name": "Новинки",
+                    "path": "new",
+                    "subcategories": [
+                        {
+                            "name": "Взуття",
+                            "path": "shoes",
+                            "products": [
+                                {
+                                    "name": "Nike Air Force 1",
+                                    "brand": "Nike",
+                                    "price": 3200,
+                                    "image": "/images/air-force-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Одяг",
+                            "path": "clothes",
+                            "products": [
+                                {
+                                    "name": "Топ H&M",
+                                    "brand": "H&M",
+                                    "price": 600,
+                                    "image": "/images/hm-top.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
-                  "name": "Футболка з Міккі",
-                  "brand": "Disney",
-                  "price": 450,
-                  "image": "/images/mickey-shirt.jpg"
+                    "name": "Одяг",
+                    "path": "clothes",
+                    "subcategories": [
+                        {
+                            "name": "Сорочки",
+                            "path": "shirts",
+                            "products": [
+                                {
+                                    "name": "Сорочка Zara",
+                                    "brand": "Zara",
+                                    "price": 1200,
+                                    "image": "/images/zara-shirt.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Джинси",
+                            "path": "jeans",
+                            "products": [
+                                {
+                                    "name": "Джинси Levi's",
+                                    "brand": "Levi's",
+                                    "price": 2400,
+                                    "image": "/images/levis-jeans.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Взуття",
+                    "path": "shoes",
+                    "subcategories": [
+                        {
+                            "name": "Кросівки",
+                            "path": "sneakers",
+                            "products": [
+                                {
+                                    "name": "Nike Air Max",
+                                    "brand": "Nike",
+                                    "price": 3500,
+                                    "image": "/images/nike-air-max.jpg"
+                                },
+                                {
+                                    "name": "Adidas Ultraboost",
+                                    "brand": "Adidas",
+                                    "price": 3900,
+                                    "image": "/images/adidas-ultraboost.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Чоботи",
+                            "path": "boots",
+                            "products": [
+                                {
+                                    "name": "Чоботи Timberland",
+                                    "brand": "Timberland",
+                                    "price": 4000,
+                                    "image": "/images/timberland-boots.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Аксесуари",
+                    "path": "accessories",
+                    "subcategories": [
+                        {
+                            "name": "Годинники",
+                            "path": "watches",
+                            "products": [
+                                {
+                                    "name": "Годинник Casio",
+                                    "brand": "Casio",
+                                    "price": 1500,
+                                    "image": "/images/casio-watch.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Сумки",
+                            "path": "bags",
+                            "products": [
+                                {
+                                    "name": "Сумка Gucci",
+                                    "brand": "Gucci",
+                                    "price": 12000,
+                                    "image": "/images/gucci-bag.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Спорт",
+                    "path": "sports",
+                    "subcategories": [
+                        {
+                            "name": "Футболки",
+                            "path": "tshirts",
+                            "products": [
+                                {
+                                    "name": "Футболка Adidas",
+                                    "brand": "Adidas",
+                                    "price": 800,
+                                    "image": "/images/adidas-tshirt.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Кросівки",
+                            "path": "running-shoes",
+                            "products": [
+                                {
+                                    "name": "Кросівки для бігу Nike",
+                                    "brand": "Nike",
+                                    "price": 3500,
+                                    "image": "/images/nike-running.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Преміум",
+                    "path": "premium",
+                    "subcategories": [
+                        {
+                            "name": "Одяг",
+                            "path": "clothes",
+                            "products": [
+                                {
+                                    "name": "Куртка Burberry",
+                                    "brand": "Burberry",
+                                    "price": 20000,
+                                    "image": "/images/burberry-jacket.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Аксесуари",
+                            "path": "accessories",
+                            "products": [
+                                {
+                                    "name": "Сумка Louis Vuitton",
+                                    "brand": "Louis Vuitton",
+                                    "price": 25000,
+                                    "image": "/images/louis-vuitton-bag.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Бренди",
+                    "path": "brands",
+                    "subcategories": [
+                        {
+                            "name": "Nike",
+                            "path": "nike",
+                            "products": [
+                                {
+                                    "name": "Nike Air Max",
+                                    "brand": "Nike",
+                                    "price": 3500,
+                                    "image": "/images/nike-air-max.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Adidas",
+                            "path": "adidas",
+                            "products": [
+                                {
+                                    "name": "Adidas Ultraboost",
+                                    "brand": "Adidas",
+                                    "price": 3900,
+                                    "image": "/images/adidas-ultraboost.jpg"
+                                }
+                            ]
+                        }
+                    ]
                 }
-              ]
-            }
-          ]
+            ]
         },
         {
-          "name": "Одяг",
-          "path": "clothes",
-          "subcategories": [
-            {
-              "name": "Футболки",
-              "path": "tshirts",
-              "products": [
+            "name": "Вона",
+            "path": "c/she",
+            "categories": [
                 {
-                  "name": "Футболка Disney",
-                  "brand": "Disney",
-                  "price": 600,
-                  "image": "/images/disney-shirt.jpg"
+                    "name": "Новинки",
+                    "path": "new",
+                    "subcategories": [
+                        {
+                            "name": "Взуття",
+                            "path": "shoes",
+                            "products": [
+                                {
+                                    "name": "Nike Air Force 1",
+                                    "brand": "Nike",
+                                    "price": 3200,
+                                    "image": "/images/air-force-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Одяг",
+                            "path": "clothes",
+                            "products": [
+                                {
+                                    "name": "Топ H&M",
+                                    "brand": "H&M",
+                                    "price": 600,
+                                    "image": "/images/hm-top.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Одяг",
+                    "path": "clothes",
+                    "subcategories": [
+                        {
+                            "name": "Сукні",
+                            "path": "dresses",
+                            "products": [
+                                {
+                                    "name": "Плаття Mango",
+                                    "brand": "Mango",
+                                    "price": 2200,
+                                    "image": "/images/mango-dress.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Аксесуари",
+                    "path": "accessories",
+                    "subcategories": [
+                        {
+                            "name": "Сумки",
+                            "path": "bags",
+                            "products": [
+                                {
+                                    "name": "Сумка Gucci",
+                                    "brand": "Gucci",
+                                    "price": 12000,
+                                    "image": "/images/gucci-bag.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Спорт",
+                    "path": "sports",
+                    "subcategories": [
+                        {
+                            "name": "Футболки",
+                            "path": "tshirts",
+                            "products": [
+                                {
+                                    "name": "Футболка Adidas",
+                                    "brand": "Adidas",
+                                    "price": 800,
+                                    "image": "/images/adidas-tshirt.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Преміум",
+                    "path": "premium",
+                    "subcategories": [
+                        {
+                            "name": "Одяг",
+                            "path": "clothes",
+                            "products": [
+                                {
+                                    "name": "Куртка Burberry",
+                                    "brand": "Burberry",
+                                    "price": 20000,
+                                    "image": "/images/burberry-jacket.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Бренди",
+                    "path": "brands",
+                    "subcategories": [
+                        {
+                            "name": "Nike",
+                            "path": "nike",
+                            "products": [
+                                {
+                                    "name": "Nike Air Max",
+                                    "brand": "Nike",
+                                    "price": 3500,
+                                    "image": "/images/nike-air-max.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Adidas",
+                            "path": "adidas",
+                            "products": [
+                                {
+                                    "name": "Adidas Ultraboost",
+                                    "brand": "Adidas",
+                                    "price": 3900,
+                                    "image": "/images/adidas-ultraboost.jpg"
+                                }
+                            ]
+                        }
+                    ]
                 }
-              ]
-            }
-          ]
+            ]
         },
         {
-          "name": "Аксесуари",
-          "path": "accessories",
-          "subcategories": [
-            {
-              "name": "Головні убори",
-              "path": "hats",
-              "products": [
+            "name": "Діти",
+            "path": "c/kids",
+            "categories": [
                 {
-                  "name": "Капелюх для хлопців",
-                  "brand": "H&M",
-                  "price": 350,
-                  "image": "/images/hm-hat.jpg"
+                    "name": "Новинки",
+                    "path": "new",
+                    "subcategories": [
+                        {
+                            "name": "Взуття",
+                            "path": "shoes",
+                            "products": [
+                                {
+                                    "name": "Кросівки Puma Kids",
+                                    "brand": "Puma",
+                                    "price": 950,
+                                    "image": "/images/puma-kids.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Одяг",
+                            "path": "clothes",
+                            "products": [
+                                {
+                                    "name": "Футболка з Міккі",
+                                    "brand": "Disney",
+                                    "price": 450,
+                                    "image": "/images/mickey-shirt.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Одяг",
+                    "path": "clothes",
+                    "subcategories": [
+                        {
+                            "name": "Футболки",
+                            "path": "tshirts",
+                            "products": [
+                                {
+                                    "name": "Футболка Disney",
+                                    "brand": "Disney",
+                                    "price": 600,
+                                    "image": "/images/disney-shirt.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Аксесуари",
+                    "path": "accessories",
+                    "subcategories": [
+                        {
+                            "name": "Головні убори",
+                            "path": "hats",
+                            "products": [
+                                {
+                                    "name": "Капелюх для хлопців",
+                                    "brand": "H&M",
+                                    "price": 350,
+                                    "image": "/images/hm-hat.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Спорт",
+                    "path": "sports",
+                    "subcategories": [
+                        {
+                            "name": "Шорти",
+                            "path": "shorts",
+                            "products": [
+                                {
+                                    "name": "Шорти Adidas Kids",
+                                    "brand": "Adidas",
+                                    "price": 800,
+                                    "image": "/images/adidas-shorts.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Преміум",
+                    "path": "premium",
+                    "subcategories": [
+                        {
+                            "name": "Одяг",
+                            "path": "clothes",
+                            "products": [
+                                {
+                                    "name": "Куртка Baby Dior",
+                                    "brand": "Baby Dior",
+                                    "price": 5000,
+                                    "image": "/images/baby-dior-jacket.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Бренди",
+                    "path": "brands",
+                    "subcategories": [
+                        {
+                            "name": "Puma",
+                            "path": "puma",
+                            "products": [
+                                {
+                                    "name": "Кросівки Puma Kids",
+                                    "brand": "Puma",
+                                    "price": 950,
+                                    "image": "/images/puma-kids.jpg"
+                                }
+                            ]
+                        }
+                    ]
                 }
-              ]
-            }
-          ]
+            ]
         },
         {
-          "name": "Спорт",
-          "path": "sports",
-          "subcategories": [
-            {
-              "name": "Шорти",
-              "path": "shorts",
-              "products": [
+            "name": "Дім",
+            "path": "c/home",
+            "categories": [
                 {
-                  "name": "Шорти Adidas Kids",
-                  "brand": "Adidas",
-                  "price": 800,
-                  "image": "/images/adidas-shorts.jpg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Преміум",
-          "path": "premium",
-          "subcategories": [
-            {
-              "name": "Одяг",
-              "path": "clothes",
-              "products": [
+                    "name": "Новинки",
+                    "path": "new",
+                    "subcategories": [
+                        {
+                            "name": "Меблі",
+                            "path": "furniture",
+                            "products": [
+                                {
+                                    "name": "Диван IKEA",
+                                    "brand": "IKEA",
+                                    "price": 7000,
+                                    "image": "/images/ikea-sofa.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Техніка",
+                            "path": "electronics",
+                            "products": [
+                                {
+                                    "name": "Холодильник Samsung",
+                                    "brand": "Samsung",
+                                    "price": 12000,
+                                    "image": "/images/samsung-fridge.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
-                  "name": "Куртка Baby Dior",
-                  "brand": "Baby Dior",
-                  "price": 5000,
-                  "image": "/images/baby-dior-jacket.jpg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Бренди",
-          "path": "brands",
-          "subcategories": [
-            {
-              "name": "Puma",
-              "path": "puma",
-              "products": [
+                    "name": "Меблі",
+                    "path": "furniture",
+                    "subcategories": [
+                        {
+                            "name": "Дивани",
+                            "path": "sofas",
+                            "products": [
+                                {
+                                    "name": "Диван IKEA",
+                                    "brand": "IKEA",
+                                    "price": 7000,
+                                    "image": "/images/ikea-sofa.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
-                  "name": "Кросівки Puma Kids",
-                  "brand": "Puma",
-                  "price": 950,
-                  "image": "/images/puma-kids.jpg"
+                    "name": "Техніка",
+                    "path": "electronics",
+                    "subcategories": [
+                        {
+                            "name": "Холодильники",
+                            "path": "fridges",
+                            "products": [
+                                {
+                                    "name": "Холодильник Samsung",
+                                    "brand": "Samsung",
+                                    "price": 12000,
+                                    "image": "/images/samsung-fridge.jpg"
+                                }
+                            ]
+                        }
+                    ]
                 }
-              ]
-            }
-          ]
+            ]
         }
-      ]
-    },
-    {
-      "name": "Дім",
-      "path": "c/home",
-      "subcategories": [
+    ],
+    "users": [
         {
-          "name": "Новинки",
-          "path": "new",
-          "subcategories": [
-            {
-              "name": "Меблі",
-              "path": "furniture",
-              "products": [
-                {
-                  "name": "Диван IKEA",
-                  "brand": "IKEA",
-                  "price": 7000,
-                  "image": "/images/ikea-sofa.jpg"
-                }
-              ]
-            },
-            {
-              "name": "Техніка",
-              "path": "electronics",
-              "products": [
-                {
-                  "name": "Холодильник Samsung",
-                  "brand": "Samsung",
-                  "price": 12000,
-                  "image": "/images/samsung-fridge.jpg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Меблі",
-          "path": "furniture",
-          "subcategories": [
-            {
-              "name": "Дивани",
-              "path": "sofas",
-              "products": [
-                {
-                  "name": "Диван IKEA",
-                  "brand": "IKEA",
-                  "price": 7000,
-                  "image": "/images/ikea-sofa.jpg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Техніка",
-          "path": "electronics",
-          "subcategories": [
-            {
-              "name": "Холодильники",
-              "path": "fridges",
-              "products": [
-                {
-                  "name": "Холодильник Samsung",
-                  "brand": "Samsung",
-                  "price": 12000,
-                  "image": "/images/samsung-fridge.jpg"
-                }
-              ]
-            }
-          ]
+            "username": "user123",
+            "email": "user@example.com",
+            "password": "hashed_password_here",
+            "phone": "+380991234567"
         }
-      ]
-    }
-  ],
-  "users": [
-    {
-      "username": "user123",
-      "email": "user@example.com",
-      "password": "hashed_password_here",
-      "phone": "+380991234567"
-    }
-  ]
+    ]
 }

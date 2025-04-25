@@ -1,18 +1,18 @@
 import axios from "axios";
 
-export const getCategories = async () => {
+export const getCollections = async () => {
     try {
-        const response = await axios.get(`http://localhost:3000/categories`);
+        const response = await axios.get(`http://localhost:3000/collections`);
         return response.data;
     } catch (e) {
         console.log(e);
     }
 };
 
-export const getCategory = async (categoryId: string) => {
+export const getCollection = async (categoryId: string) => {
     try {
         const response = await axios.get(
-            `${import.meta.env.VITE_API_URL}/categories/${categoryId}`
+            `${import.meta.env.VITE_API_URL}/collections/${categoryId}`
         );
         return response.data;
     } catch (e) {

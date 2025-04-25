@@ -1,18 +1,28 @@
-import { Link, NavLink } from "react-router";
-
 import AccountIcon from "../../assets/svg/account.svg?react";
 import HeartIcon from "../../assets/svg/heart.svg?react";
 import CartIcon from "../../assets/svg/cart.svg?react";
 import SearchIcon from "../../assets/svg/search.svg?react";
-import { useEffect } from "react";
-import { fetchCategories } from "../../store/slices/categories.slice";
+import { useEffect, useState } from "react";
+import { fetchCollections } from "../../store/slices/collections.slice";
 import { useAppDispatch } from "../../hooks";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
-import { ICategory } from "../../types/dbtypes";
+import { ICollection } from "../../types/dbtypes";
+import { Link, NavLink, useLocation } from "react-router";
 
 const Header = () => {
     const dispatch = useAppDispatch();
+    const location = useLocation();
+    const collections = useSelector(
+        (state: RootState) => state.collections.collections as ICollection[]
+    );
+
+    const [activeCollection, setActiveCollection] =
+        useState<ICollection | null>();
+
+    const currentCollectionPath =
+        localStorage.getItem("currentCollection") ||
+        location.pathname.split("/")[1];
 
     const navItems = [
         { to: "cart", Icon: CartIcon, className: "stroke-black" },
@@ -21,50 +31,50 @@ const Header = () => {
     ];
 
     useEffect(() => {
-        dispatch(fetchCategories());
-    }, []);
+        dispatch(fetchCollections());
+    }, [dispatch]);
 
-    const categories = useSelector(
-        (state: RootState) => state.categories.categories as ICategory[]
-    );
+    useEffect(() => {
+        const foundCollection = collections.find(
+            (collection) => collection.path === currentCollectionPath
+        );
+        if (foundCollection) {
+            setActiveCollection(foundCollection);
+        } else {
+            setActiveCollection(collections[0]);
+        }
 
-    const currentCategoryPath =
-        localStorage.getItem("currentCategory") ||
-        location.pathname.split("/")[1];
+        console.log("collections:", collections);
+        console.log("activeCollection:", activeCollection);
+    }, [collections, currentCollectionPath]);
 
-    const activeCategory = categories.find(
-        (category) => category.path === currentCategoryPath
-    );
+    const handleCategoryClick = (collection: ICollection) => {
+        localStorage.setItem("currentCollection", collection.path);
+        setActiveCollection(collection);
+    };
+
+    console.log(location.pathname);
 
     return (
         <>
             <header className="py-[10px] px-[20px] md:px-[35px] h-[70px] md:h-[80px] flex justify-between items-center w-full bg-white z-[100] shadow-custom">
                 <nav className="flex gap-[25px]">
-                    {categories.map((category, i: number) => (
+                    {collections.map((collection, i) => (
                         <div key={i}>
                             <NavLink
-                                to={category.path}
-                                onClick={() => {
-                                    localStorage.setItem(
-                                        "currentCategory",
-                                        category.path
-                                    );
-                                }}
-                                className={({ isActive, isPending }) =>
-                                    isPending
-                                        ? "pending"
-                                        : isActive
-                                        ? "border-b"
-                                        : ""
+                                to={collection.path}
+                                onClick={() => handleCategoryClick(collection)}
+                                className={({ isActive }) =>
+                                    isActive ? "border-b" : ""
                                 }
                             >
-                                {category.name}
+                                {collection.name}
                             </NavLink>
                         </div>
                     ))}
                 </nav>
                 <div className="absolute left-1/2 transform -translate-x-1/2">
-                    <a href="#" className="font-bold text-3xl tracking-tighter">
+                    <a href="#" className="font-bold text-4xl tracking-tighter">
                         NOIRBLANK
                     </a>
                 </div>
@@ -81,11 +91,19 @@ const Header = () => {
             </header>
 
             <div className="flex bg-gray-100 p-[6px] justify-between px-[30px] items-center">
-                <ul className="flex gap-[20px] text-sm">
-                    {activeCategory?.subcategories.map((subcategory, i) => (
-                        <li key={i}>{subcategory.name}</li>
-                    ))}
-                </ul>
+                {activeCollection && activeCollection.categories.length > 0 && (
+                    <ul className="flex gap-[20px] text-sm">
+                        {activeCollection.categories.map((category, i) => (
+                            <li key={i}>
+                                <Link
+                                    to={`${activeCollection.path}/${category.path}`}
+                                >
+                                    {category.name}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                )}
 
                 <div className="relative">
                     <SearchIcon className="stroke-black w-5 h-5 absolute right-0 top-[50%] translate-y-[-50%]" />

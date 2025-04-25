@@ -1,18 +1,24 @@
-export interface IProduct {
-    name: string;
-    brand: string;
-    price: number;
-    image: string;
-}
-
-export interface ISubcategory {
+export interface ICollection {
     name: string;
     path: string;
-    products: IProduct[];
+    categories: ICategory[];
 }
 
 export interface ICategory {
     name: string;
     path: string;
     subcategories: ISubcategory[];
+}
+
+export interface ISubcategory {
+    name: string;
+    path: string;
+    subcategories: IProduct[];
+}
+
+export interface IProduct {
+    name: string;
+    brand: string;
+    price: number;
+    image: string;
 }
