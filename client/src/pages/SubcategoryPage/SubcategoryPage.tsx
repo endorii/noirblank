@@ -5,8 +5,8 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../types/reduxtypes";
 import { fetchCollections } from "../../store/slices/collections.slice";
 
-const CategoryPage = () => {
-    const { collectionName, categoryName } = useParams();
+const SubcategoryPage = () => {
+    const { collectionName, categoryName, subcategoryName } = useParams();
 
     const dispatch = useAppDispatch();
 
@@ -22,13 +22,17 @@ const CategoryPage = () => {
         (category) => category.path === categoryName
     );
 
+    const subcategory = category?.subcategories.find(
+        (subcategory) => subcategory.path === subcategoryName
+    );
+
     console.log(category);
 
     useEffect(() => {
         dispatch(fetchCollections());
     }, []);
 
-    if (!category) {
+    if (!subcategory) {
         return (
             <div className="pt-[130px] text-center text-[50px]">
                 Підкатегорію не знайдено :(
@@ -38,20 +42,20 @@ const CategoryPage = () => {
 
     return (
         <div>
-            <h2>{category?.name}</h2>
+            <h2>{subcategory?.name}</h2>
             <ul>
-                {category.subcategories && category.subcategories.length > 0 ? (
+                {subcategory && subcategory.products.length > 0 ? (
                     <ul>
-                        {category.subcategories.map((product, i) => (
+                        {subcategory?.products.map((product, i) => (
                             <li key={i}>{product.name}</li>
                         ))}
                     </ul>
                 ) : (
-                    <p>Продукти не знайдені для цієї категорії.</p>
+                    <p>Продукти не знайдені для цієї підкатегорії.</p>
                 )}
             </ul>
         </div>
     );
 };
 
-export default CategoryPage;
+export default SubcategoryPage;

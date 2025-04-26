@@ -1,7 +1,7 @@
-import heVideo from "../../assets/video/he.mp4";
-import sheVideo from "../../assets/video/she.mp4";
-import kidsVideo from "../../assets/video/kids.mp4";
-import homeVideo from "../../assets/video/home.mp4";
+import heVideo from "../assets/video/he.mp4";
+import sheVideo from "../assets/video/she.mp4";
+import kidsVideo from "../assets/video/kids.mp4";
+import homeVideo from "../assets/video/home.mp4";
 import { Link } from "react-router";
 
 const ChooseCategory = () => {

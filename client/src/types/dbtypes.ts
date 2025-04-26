@@ -13,7 +13,7 @@ export interface ICategory {
 export interface ISubcategory {
     name: string;
     path: string;
-    subcategories: IProduct[];
+    products: IProduct[];
 }
 
 export interface IProduct {

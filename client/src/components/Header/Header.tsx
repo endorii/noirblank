@@ -7,7 +7,7 @@ import { fetchCollections } from "../../store/slices/collections.slice";
 import { useAppDispatch } from "../../hooks";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
-import { ICollection } from "../../types/dbtypes";
+import { ICategory, ICollection, ISubcategory } from "../../types/dbtypes";
 import { Link, NavLink, useLocation } from "react-router";
 
 const Header = () => {
@@ -19,6 +19,11 @@ const Header = () => {
 
     const [activeCollection, setActiveCollection] =
         useState<ICollection | null>();
+    const [isShown, setIsShown] = useState(false);
+    const [currentSubcategory, setCurrentSubcategory] = useState<
+        ISubcategory[] | null
+    >();
+    const [currentCategory, setCurrentCategory] = useState<ICategory | null>();
 
     const currentCollectionPath =
         localStorage.getItem("currentCollection") ||
@@ -53,11 +58,15 @@ const Header = () => {
         setActiveCollection(collection);
     };
 
-    console.log(location.pathname);
-
     return (
         <>
-            <header className="py-[10px] px-[20px] md:px-[35px] h-[70px] md:h-[80px] flex justify-between items-center w-full bg-white z-[100] shadow-custom">
+            <header
+                className="relative py-[10px] px-[20px] md:px-[35px] h-[70px] md:h-[80px] flex justify-between items-center w-full bg-white z-[100] shadow-custom"
+                onMouseEnter={() => {
+                    setIsShown(false);
+                    setCurrentSubcategory(null);
+                }}
+            >
                 <nav className="flex gap-[25px]">
                     {collections.map((collection, i) => (
                         <div key={i}>
@@ -90,17 +99,38 @@ const Header = () => {
                 </ul>
             </header>
 
-            <div className="flex bg-gray-100 p-[6px] justify-between px-[30px] items-center">
+            <div className="relative flex bg-gray-100 justify-between px-[25px] items-center">
                 {activeCollection && activeCollection.categories.length > 0 && (
-                    <ul className="flex gap-[20px] text-sm">
+                    <ul className="flex gap-[10px] text-sm">
                         {activeCollection.categories.map((category, i) => (
-                            <li key={i}>
-                                <Link
-                                    to={`${activeCollection.path}/${category.path}`}
+                            <NavLink
+                                to={`${activeCollection.path}/${category.path}`}
+                                className={({ isActive }) =>
+                                    isActive ? "border-b" : ""
+                                }
+                            >
+                                <li
+                                    className={`h-[40px] flex items-center hover:bg-white hover:border-b px-[10px] ${
+                                        category.subcategories ===
+                                        currentSubcategory
+                                            ? "border-b bg-white"
+                                            : ""
+                                    }`}
+                                    key={i}
+                                    onMouseEnter={() => {
+                                        setIsShown(true);
+                                        setCurrentCategory(category);
+                                        setCurrentSubcategory(
+                                            category.subcategories
+                                        );
+                                    }}
+                                    onMouseLeave={() => {
+                                        setIsShown(false);
+                                    }}
                                 >
                                     {category.name}
-                                </Link>
-                            </li>
+                                </li>
+                            </NavLink>
                         ))}
                     </ul>
                 )}
@@ -114,6 +144,35 @@ const Header = () => {
                     />
                 </div>
             </div>
+            {isShown && (
+                <div className="bg-black/20 absolute w-full h-[calc(100vh-120px)] left-0 top-[120px] ">
+                    <ul
+                        className="bg-white p-[35px] flex flex-col gap-[7px]"
+                        onMouseEnter={() => {
+                            setIsShown(true);
+                        }}
+                        onMouseLeave={() => {
+                            setIsShown(false);
+                            setCurrentSubcategory(null);
+                        }}
+                    >
+                        {currentSubcategory?.map((subcategory, i) => {
+                            return (
+                                <Link
+                                    to={`${activeCollection?.path}/${currentCategory?.path}/${subcategory.path}`}
+                                    onClick={() => {
+                                        setIsShown(false);
+                                    }}
+                                >
+                                    <li key={i} className="text-sm">
+                                        {subcategory.name}
+                                    </li>
+                                </Link>
+                            );
+                        })}
+                    </ul>
+                </div>
+            )}
         </>
     );
 };
