@@ -8,7 +8,6 @@ import {
 } from "react-router";
 import { StrictMode } from "react";
 import App from "./pages/App";
-import ChooseCategory from "./components/ChooseCategory";
 import { Provider } from "react-redux";
 import store from "./store/store";
 import Cart from "./pages/Cart/Cart";
@@ -22,14 +21,13 @@ const router = createBrowserRouter(
     createRoutesFromElements(
         <>
             <Route path="/" element={<App />}>
-                <Route path="c" element={<ChooseCategory />} />
-                <Route path="c/:collectionName" element={<CollectionPage />} />
+                <Route path=":collectionName" element={<CollectionPage />} />
                 <Route
-                    path="c/:collectionName/:categoryName"
+                    path=":collectionName/:categoryName"
                     element={<CategoryPage />}
                 />
                 <Route
-                    path="c/:collectionName/:categoryName/:subcategoryName"
+                    path=":collectionName/:categoryName/:subcategoryName"
                     element={<SubcategoryPage />}
                 />
                 <Route path="cart" element={<Cart />} />

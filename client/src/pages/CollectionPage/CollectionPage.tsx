@@ -15,7 +15,7 @@ const CollectionPage = () => {
     );
 
     const collection = collections.find(
-        (collection) => collection.path === `c/${collectionName}`
+        (collection) => collection.path === `${collectionName}`
     );
 
     useEffect(() => {
@@ -30,7 +30,11 @@ const CollectionPage = () => {
         );
     }
 
-    return <h2>{collection.name}</h2>;
+    return (
+        <div className="p-[30px]">
+            <h2>{collection.name}</h2>
+        </div>
+    );
 };
 
 export default CollectionPage;

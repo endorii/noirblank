@@ -7,18 +7,11 @@ export interface ICollection {
 export interface ICategory {
     name: string;
     path: string;
-    subcategories: ISubcategory[];
-}
-
-export interface ISubcategory {
-    name: string;
-    path: string;
     products: IProduct[];
 }
 
 export interface IProduct {
     name: string;
-    brand: string;
     price: number;
-    image: string;
+    images: string[];
 }
