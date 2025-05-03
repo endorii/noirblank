@@ -3,7 +3,7 @@ import { fetchCollections } from "../../store/slices/collections.slice";
 import { useAppDispatch } from "../../hooks";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import { ICollection } from "../../types/dbtypes";
 
 interface ChooseCategoryHeaderProps {
@@ -30,15 +30,23 @@ const ChooseCategoryHeader = ({
                 {collections.map((collection, i) => (
                     <li
                         key={i}
-                        className="flex-1 border-r border-b border-t-0 border-gray-200 transition-all ease-in-out duration-200"
+                        className="flex-1 border-r h-full border-b border-t-0 border-gray-200 transition-all ease-in-out duration-200"
                     >
-                        <Link
+                        <NavLink
                             to={collection.path}
                             onClick={() => setCurrentCollection(collection)}
-                            className="flex items-center justify-center w-full bg-white h-full p-[15px] hover:bg-black hover:text-white cursor-pointer"
+                            className={({ isActive, isPending }) => {
+                                const base =
+                                    "flex items-center justify-center w-full p-[15px] cursor-pointer hover:bg-black hover:text-white";
+                                const state =
+                                    isPending || !isActive
+                                        ? "bg-white text-black"
+                                        : "bg-black text-white";
+                                return `${base} ${state}`;
+                            }}
                         >
-                            {collection.name}
-                        </Link>
+                            {collection.name || "Назва"}
+                        </NavLink>
                     </li>
                 ))}
             </ul>

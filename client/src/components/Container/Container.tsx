@@ -5,7 +5,7 @@ interface ContainerProps {
 }
 
 const Container = ({ children }: ContainerProps) => {
-    return <div className="mt-[134px]">{children}</div>;
+    return <div className="mt-[115px] p-[30px]">{children}</div>;
 };
 
 export default Container;

@@ -14,22 +14,12 @@ import Cart from "./pages/Cart/Cart";
 import Likes from "./pages/Likes/Likes";
 import Account from "./pages/Account/Account";
 import CollectionPage from "./pages/CollectionPage/CollectionPage";
-import CategoryPage from "./pages/CategoryPage/CategoryPage";
-import SubcategoryPage from "./pages/SubcategoryPage/SubcategoryPage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
             <Route path="/" element={<App />}>
                 <Route path=":collectionName" element={<CollectionPage />} />
-                <Route
-                    path=":collectionName/:categoryName"
-                    element={<CategoryPage />}
-                />
-                <Route
-                    path=":collectionName/:categoryName/:subcategoryName"
-                    element={<SubcategoryPage />}
-                />
                 <Route path="cart" element={<Cart />} />
                 <Route path="likes" element={<Likes />} />
                 <Route path="account" element={<Account />} />

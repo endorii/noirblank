@@ -6,11 +6,15 @@ import { RootState } from "../store/store";
 import Header from "../components/Header/Header";
 import ChooseCategoryHeader from "../components/ChooseCategoryHeader/ChooseCategoryHeader";
 import { ICollection } from "../types/dbtypes";
-import { Outlet } from "react-router";
+import { Link, Outlet, useLocation } from "react-router";
 import Container from "../components/Container/Container";
+import Footer from "../components/Footer/Footer";
+// import TestBanner from "../assets/img/tshirtbanner.jpg";
 
 function App() {
     const dispatch = useAppDispatch();
+    const location = useLocation();
+
     const [currentCollection, setCurrentCollection] =
         useState<ICollection | null>(null);
 
@@ -21,6 +25,8 @@ function App() {
     useEffect(() => {
         dispatch(fetchCollections());
     }, [dispatch]);
+
+    const isHomePage = location.pathname === "/";
 
     return (
         <>
@@ -33,13 +39,27 @@ function App() {
             </div>
 
             <Container>
-                {window.location.pathname === "/" ? (
-                    <div className="collections-list mt-10 p-5">
-                        <h2 className="text-2xl font-bold">Колекції</h2>
-                        <ul className="">
+                {isHomePage ? (
+                    <div className="collections-list">
+                        <h3 className="mt-[30px] text-2xl uppercase font-bold">
+                            Колекції
+                        </h3>
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-[30px]">
                             {collections.map((collection, i) => (
                                 <li key={i}>
-                                    <h3>{collection.name}</h3>
+                                    <Link
+                                        to={collection.path}
+                                        className="relative group"
+                                    >
+                                        <div className="absolute top-0 left-0 bg-black text-white px-[25px] py-[15px] text-lg z-10 group-hover:bg-white group-hover:text-black transition-colors duration-300">
+                                            {collection.name}
+                                        </div>
+                                        <img
+                                            src={collection.banner}
+                                            alt={collection.name}
+                                            className="w-full h-[100vh] object-cover filter transition-all duration-300"
+                                        />
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -48,6 +68,7 @@ function App() {
                     <Outlet />
                 )}
             </Container>
+            <Footer />
         </>
     );
 }

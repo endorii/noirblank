@@ -3,10 +3,12 @@
         {
             "name": "Aesth",
             "path": "aesth",
+            "banner": "",
             "categories": [
                 {
-                    "name": "Tshirts",
+                    "name": "Футболки",
                     "path": "tshirts",
+                    "banner": "/images/tshirtbanner.jpg",
                     "products": [
                         {
                             "name": "Tshirt1",
@@ -15,6 +17,30 @@
                                 "/images/tshirt1.jpg",
                                 "/images/tshirt2.jpg"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Худі",
+                    "path": "hoodie",
+                    "banner": "/images/hoodiebanner.jpg",
+                    "products": [
+                        {
+                            "name": "Hoodie1",
+                            "price": 900,
+                            "images": ["/images/hoodie1.jpg"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Штани",
+                    "path": "pants",
+                    "banner": "/images/pantsbanner.jpg",
+                    "products": [
+                        {
+                            "name": "Pants1",
+                            "price": 750,
+                            "images": ["/images/pants1.jpg"]
                         }
                     ]
                 }
@@ -23,10 +49,12 @@
         {
             "name": "Outumn",
             "path": "aesth2",
+            "banner": "/images/outumn-banner.png",
             "categories": [
                 {
-                    "name": "Tshirts",
+                    "name": "Футболки",
                     "path": "tshirts",
+                    "banner": "/images/tshirtbanner.jpg",
                     "products": [
                         {
                             "name": "Tshirt1",
@@ -35,6 +63,30 @@
                                 "/images/tshirt1.jpg",
                                 "/images/tshirt2.jpg"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Худі",
+                    "path": "hoodie",
+                    "banner": "/images/hoodiebanner.jpg",
+                    "products": [
+                        {
+                            "name": "Hoodie1",
+                            "price": 900,
+                            "images": ["/images/hoodie1.jpg"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Штани",
+                    "path": "pants",
+                    "banner": "/images/pantsbanner.jpg",
+                    "products": [
+                        {
+                            "name": "Pants1",
+                            "price": 750,
+                            "images": ["/images/pants1.jpg"]
                         }
                     ]
                 }
@@ -43,10 +95,12 @@
         {
             "name": "247",
             "path": "aesth3",
+            "banner": "/images/247-banner.png",
             "categories": [
                 {
-                    "name": "Tshirts",
+                    "name": "Футболки",
                     "path": "tshirts",
+                    "banner": "/images/tshirtbanner.jpg",
                     "products": [
                         {
                             "name": "Tshirt1",
@@ -57,16 +111,42 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "name": "Худі",
+                    "path": "hoodie",
+                    "banner": "/images/hoodiebanner.jpg",
+                    "products": [
+                        {
+                            "name": "Hoodie1",
+                            "price": 900,
+                            "images": ["/images/hoodie1.jpg"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Штани",
+                    "path": "pants",
+                    "banner": "/images/pantsbanner.jpg",
+                    "products": [
+                        {
+                            "name": "Pants1",
+                            "price": 750,
+                            "images": ["/images/pants1.jpg"]
+                        }
+                    ]
                 }
             ]
         },
         {
             "name": "Mentality",
             "path": "aesth4",
+            "banner": "/images/mentalitybanner.jpg",
             "categories": [
                 {
-                    "name": "Tshirts",
+                    "name": "Футболки",
                     "path": "tshirts",
+                    "banner": "/images/tshirtbanner.jpg",
                     "products": [
                         {
                             "name": "Tshirt1",
@@ -75,6 +155,30 @@
                                 "/images/tshirt1.jpg",
                                 "/images/tshirt2.jpg"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Худі",
+                    "path": "hoodie",
+                    "banner": "/images/hoodiebanner.jpg",
+                    "products": [
+                        {
+                            "name": "Hoodie1",
+                            "price": 900,
+                            "images": ["/images/hoodie1.jpg"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Штани",
+                    "path": "pants",
+                    "banner": "/images/pantsbanner.jpg",
+                    "products": [
+                        {
+                            "name": "Pants1",
+                            "price": 750,
+                            "images": ["/images/pants1.jpg"]
                         }
                     ]
                 }
