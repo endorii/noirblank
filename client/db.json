@@ -3,7 +3,7 @@
         {
             "name": "Aesth",
             "path": "aesth",
-            "banner": "",
+            "banner": "/images/aesthbanner.png",
             "categories": [
                 {
                     "name": "Футболки",
@@ -13,10 +13,23 @@
                         {
                             "name": "Tshirt1",
                             "price": 600,
-                            "images": [
-                                "/images/tshirt1.jpg",
-                                "/images/tshirt2.jpg"
-                            ]
+                            "path": "tshirt1",
+                            "images": ["/images/black_tshirt.jpg"],
+                            "available": true
+                        },
+                        {
+                            "name": "Tshirt2",
+                            "price": 650,
+                            "path": "tshirt2",
+                            "images": ["/images/black_tshirt.jpg"],
+                            "available": false
+                        },
+                        {
+                            "name": "Tshirt3",
+                            "price": 700,
+                            "path": "tshirt3",
+                            "images": ["/images/black_tshirt.jpg"],
+                            "available": true
                         }
                     ]
                 },
@@ -28,28 +41,46 @@
                         {
                             "name": "Hoodie1",
                             "price": 900,
-                            "images": ["/images/hoodie1.jpg"]
+                            "path": "hoodie1",
+                            "images": ["/images/black_hoodie.jpg"],
+                            "available": false
+                        },
+                        {
+                            "name": "Hoodie2",
+                            "price": 950,
+                            "path": "hoodie2",
+                            "images": ["/images/white_hoodie.jpg"],
+                            "available": true
                         }
                     ]
                 },
                 {
-                    "name": "Штани",
-                    "path": "pants",
-                    "banner": "/images/pantsbanner.jpg",
+                    "name": "Зіп-кофти",
+                    "path": "zip",
+                    "banner": "/images/zipbanner.jpg",
                     "products": [
                         {
-                            "name": "Pants1",
+                            "name": "Zip1",
                             "price": 750,
-                            "images": ["/images/pants1.jpg"]
+                            "path": "zip1",
+                            "images": ["/images/black_zip.jpg"],
+                            "available": true
+                        },
+                        {
+                            "name": "Zip2",
+                            "price": 800,
+                            "path": "zip2",
+                            "images": ["/images/black_zip.jpg"],
+                            "available": false
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "Outumn",
-            "path": "aesth2",
-            "banner": "/images/outumn-banner.png",
+            "name": "Serenity",
+            "path": "serenity",
+            "banner": "/images/serenitybanner.png",
             "categories": [
                 {
                     "name": "Футболки",
@@ -57,12 +88,18 @@
                     "banner": "/images/tshirtbanner.jpg",
                     "products": [
                         {
-                            "name": "Tshirt1",
-                            "price": 600,
-                            "images": [
-                                "/images/tshirt1.jpg",
-                                "/images/tshirt2.jpg"
-                            ]
+                            "name": "TshirtOut1",
+                            "price": 620,
+                            "path": "tshirtout1",
+                            "images": ["/images/black_tshirt.jpg"],
+                            "available": true
+                        },
+                        {
+                            "name": "TshirtOut2",
+                            "price": 680,
+                            "path": "tshirtout2",
+                            "images": ["/images/black_tshirt.jpg"],
+                            "available": false
                         }
                     ]
                 },
@@ -72,21 +109,32 @@
                     "banner": "/images/hoodiebanner.jpg",
                     "products": [
                         {
-                            "name": "Hoodie1",
-                            "price": 900,
-                            "images": ["/images/hoodie1.jpg"]
+                            "name": "HoodieOut1",
+                            "price": 930,
+                            "path": "hoodieout1",
+                            "images": ["/images/black_hoodie.jpg"],
+                            "available": false
+                        },
+                        {
+                            "name": "HoodieOut2",
+                            "price": 980,
+                            "path": "hoodieout2",
+                            "images": ["/images/white_hoodie.jpg"],
+                            "available": true
                         }
                     ]
                 },
                 {
-                    "name": "Штани",
-                    "path": "pants",
-                    "banner": "/images/pantsbanner.jpg",
+                    "name": "Зіп-кофти",
+                    "path": "zip",
+                    "banner": "/images/zipbanner.jpg",
                     "products": [
                         {
-                            "name": "Pants1",
-                            "price": 750,
-                            "images": ["/images/pants1.jpg"]
+                            "name": "ZipOut1",
+                            "price": 770,
+                            "path": "zipout1",
+                            "images": ["/images/black_zip.jpg"],
+                            "available": true
                         }
                     ]
                 }
@@ -94,8 +142,8 @@
         },
         {
             "name": "247",
-            "path": "aesth3",
-            "banner": "/images/247-banner.png",
+            "path": "247",
+            "banner": "/images/247banner.png",
             "categories": [
                 {
                     "name": "Футболки",
@@ -103,12 +151,18 @@
                     "banner": "/images/tshirtbanner.jpg",
                     "products": [
                         {
-                            "name": "Tshirt1",
-                            "price": 600,
-                            "images": [
-                                "/images/tshirt1.jpg",
-                                "/images/tshirt2.jpg"
-                            ]
+                            "name": "Tshirt247-1",
+                            "price": 610,
+                            "path": "tshirt247_1",
+                            "images": ["/images/black_tshirt.jpg"],
+                            "available": true
+                        },
+                        {
+                            "name": "Tshirt247-2",
+                            "price": 665,
+                            "path": "tshirt247_2",
+                            "images": ["/images/black_tshirt.jpg"],
+                            "available": false
                         }
                     ]
                 },
@@ -118,30 +172,41 @@
                     "banner": "/images/hoodiebanner.jpg",
                     "products": [
                         {
-                            "name": "Hoodie1",
-                            "price": 900,
-                            "images": ["/images/hoodie1.jpg"]
+                            "name": "Hoodie247-1",
+                            "price": 910,
+                            "path": "hoodie247_1",
+                            "images": ["/images/white_hoodie.jpg"],
+                            "available": true
                         }
                     ]
                 },
                 {
-                    "name": "Штани",
-                    "path": "pants",
-                    "banner": "/images/pantsbanner.jpg",
+                    "name": "Зіп-кофти",
+                    "path": "zip",
+                    "banner": "/images/zipbanner.jpg",
                     "products": [
                         {
-                            "name": "Pants1",
-                            "price": 750,
-                            "images": ["/images/pants1.jpg"]
+                            "name": "Zip247-1",
+                            "price": 790,
+                            "path": "zip247_1",
+                            "images": ["/images/black_zip.jpg"],
+                            "available": false
+                        },
+                        {
+                            "name": "Zip247-2",
+                            "price": 820,
+                            "path": "zip247_2",
+                            "images": ["/images/black_zip.jpg"],
+                            "available": true
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "Mentality",
-            "path": "aesth4",
-            "banner": "/images/mentalitybanner.jpg",
+            "name": "Bliss",
+            "path": "bliss",
+            "banner": "/images/blissbanner.png",
             "categories": [
                 {
                     "name": "Футболки",
@@ -149,12 +214,18 @@
                     "banner": "/images/tshirtbanner.jpg",
                     "products": [
                         {
-                            "name": "Tshirt1",
-                            "price": 600,
-                            "images": [
-                                "/images/tshirt1.jpg",
-                                "/images/tshirt2.jpg"
-                            ]
+                            "name": "TshirtMen1",
+                            "price": 605,
+                            "path": "tshirtmen1",
+                            "images": ["/images/black_tshirt.jpg"],
+                            "available": false
+                        },
+                        {
+                            "name": "TshirtMen2",
+                            "price": 690,
+                            "path": "tshirtmen2",
+                            "images": ["/images/black_tshirt.jpg"],
+                            "available": true
                         }
                     ]
                 },
@@ -164,21 +235,32 @@
                     "banner": "/images/hoodiebanner.jpg",
                     "products": [
                         {
-                            "name": "Hoodie1",
-                            "price": 900,
-                            "images": ["/images/hoodie1.jpg"]
+                            "name": "HoodieMen1",
+                            "price": 940,
+                            "path": "hoodiemen1",
+                            "images": ["/images/black_hoodie.jpg"],
+                            "available": true
                         }
                     ]
                 },
                 {
-                    "name": "Штани",
-                    "path": "pants",
-                    "banner": "/images/pantsbanner.jpg",
+                    "name": "Зіп-кофти",
+                    "path": "zip",
+                    "banner": "/images/zipbanner.jpg",
                     "products": [
                         {
-                            "name": "Pants1",
-                            "price": 750,
-                            "images": ["/images/pants1.jpg"]
+                            "name": "ZipMen1",
+                            "price": 780,
+                            "path": "zipmen1",
+                            "images": ["/images/black_zip.jpg"],
+                            "available": true
+                        },
+                        {
+                            "name": "ZipMen2",
+                            "price": 810,
+                            "path": "zipmen2",
+                            "images": ["/images/black_zip.jpg"],
+                            "available": false
                         }
                     ]
                 }
