@@ -37,7 +37,7 @@ const ChooseCategoryHeader = ({
                             onClick={() => setCurrentCollection(collection)}
                             className={({ isActive, isPending }) => {
                                 const base =
-                                    "flex items-center justify-center w-full p-[15px] cursor-pointer hover:bg-black hover:text-white";
+                                    "flex items-center justify-center w-full p-[15px] cursor-pointer hover:bg-black hover:text-white lowercase transition-all duration-300";
                                 const state =
                                     isPending || !isActive
                                         ? "bg-white text-black"
@@ -45,7 +45,7 @@ const ChooseCategoryHeader = ({
                                 return `${base} ${state}`;
                             }}
                         >
-                            {collection.name || "Назва"}
+                            {collection.name}
                         </NavLink>
                     </li>
                 ))}

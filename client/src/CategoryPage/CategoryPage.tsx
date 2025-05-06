@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import { fetchCollections } from "../../store/slices/collections.slice";
-import { useAppDispatch } from "../../hooks";
+import { fetchCollections } from "../store/slices/collections.slice";
+import { useAppDispatch } from "../hooks";
 import { Link, useParams } from "react-router";
 import { useSelector } from "react-redux";
-import { RootState } from "../../types/reduxtypes";
+import { RootState } from "../types/reduxtypes";
 import { useLocation } from "react-router";
 
-const CollectionPage = () => {
-    const { collectionName } = useParams();
+const CategoryPage = () => {
+    const { collectionName, categoryName } = useParams();
 
     const dispatch = useAppDispatch();
     const location = useLocation();
@@ -20,6 +20,10 @@ const CollectionPage = () => {
         (collection) => collection.path === `${collectionName}`
     );
 
+    const category = collection?.categories.find(
+        (category) => category.path === categoryName
+    );
+
     useEffect(() => {
         dispatch(fetchCollections());
     }, []);
@@ -27,7 +31,7 @@ const CollectionPage = () => {
     if (!collection) {
         return (
             <div className="pt-[130px] text-center text-[50px]">
-                Коллекцію не знайдено :(
+                Товари для цієї категорії не знайдено :(
             </div>
         );
     }
@@ -35,21 +39,21 @@ const CollectionPage = () => {
     return (
         <div>
             <h3 className="mt-[30px] text-2xl uppercase font-bold">
-                Доступні категорії:
+                Доступні топари:
             </h3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[20px] mt-[30px]">
-                {collection.categories.map((category, i) => (
+            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-[20px] mt-[30px]">
+                {category?.products.map((product, i) => (
                     <li key={i}>
                         <Link
-                            to={`${location.pathname}/${category.path}`}
+                            to={`${location.pathname}/${product.path}`}
                             className="relative block"
                         >
                             <div className="absolute top-0 left-0 bg-black text-white px-[25px] py-[15px] text-lg z-10">
-                                {category.name}
+                                {product.name}
                             </div>
                             <img
-                                src={category.banner}
-                                alt={category.name}
+                                src={product.images[0]}
+                                alt={product.name}
                                 className="w-full h-auto"
                             />
                         </Link>
@@ -60,4 +64,4 @@ const CollectionPage = () => {
     );
 };
 
-export default CollectionPage;
+export default CategoryPage;

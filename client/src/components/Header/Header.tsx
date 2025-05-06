@@ -12,7 +12,7 @@ const Header = () => {
     ];
 
     return (
-        <header className="relative py-[10px] px-[20px] md:px-[35px] h-[70px] md:h-[80px] flex  justify-end items-center w-full bg-white z-[100] shadow-custom border-b border-gray-200">
+        <header className="relative py-[10px] px-[20px] md:px-[35px] h-[75px] md:h-[85px] flex  justify-end items-center w-full bg-white z-[100] shadow-custom border-b border-gray-200">
             <div className="absolute left-1/2 transform -translate-x-1/2">
                 <Link to="/" className="font-bold text-4xl tracking-tighter">
                     mindset

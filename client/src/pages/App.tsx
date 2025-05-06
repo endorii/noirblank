@@ -9,7 +9,6 @@ import { ICollection } from "../types/dbtypes";
 import { Link, Outlet, useLocation } from "react-router";
 import Container from "../components/Container/Container";
 import Footer from "../components/Footer/Footer";
-// import TestBanner from "../assets/img/tshirtbanner.jpg";
 
 function App() {
     const dispatch = useAppDispatch();

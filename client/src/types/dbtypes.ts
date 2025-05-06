@@ -15,5 +15,6 @@ export interface ICategory {
 export interface IProduct {
     name: string;
     price: number;
+    path: string;
     images: string[];
 }
