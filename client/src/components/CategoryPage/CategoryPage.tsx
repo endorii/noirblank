@@ -1,32 +1,12 @@
-import { useEffect } from "react";
-import { fetchCollections } from "../store/slices/collections.slice";
-import { useAppDispatch } from "../hooks";
-import { Link, useParams } from "react-router";
-import { useSelector } from "react-redux";
-import { RootState } from "../types/reduxtypes";
+import { Link } from "react-router";
+
 import { useLocation } from "react-router";
+import { useProductTree } from "../../hooks/useProductTree";
 
 const CategoryPage = () => {
-    const { collectionName, categoryName } = useParams();
-
-    const dispatch = useAppDispatch();
     const location = useLocation();
 
-    const { collections } = useSelector(
-        (state: RootState) => state.collections
-    );
-
-    const collection = collections.find(
-        (collection) => collection.path === `${collectionName}`
-    );
-
-    const category = collection?.categories.find(
-        (category) => category.path === categoryName
-    );
-
-    useEffect(() => {
-        dispatch(fetchCollections());
-    }, []);
+    const { collection, category } = useProductTree();
 
     if (!collection) {
         return (
@@ -39,7 +19,7 @@ const CategoryPage = () => {
     return (
         <div>
             <h3 className="mt-[30px] text-2xl uppercase font-bold">
-                Доступні топари:
+                Доступні товари:
             </h3>
             <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-[20px] mt-[30px]">
                 {category?.products.map((product, i) => (

@@ -15,21 +15,36 @@
                             "price": 600,
                             "path": "tshirt1",
                             "images": ["/images/black_tshirt.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Стильний та зручний одяг, ідеальний для повсякденного використання.",
+                            "composition": "95% бавовна, 5% еластан",
+                            "sizes": ["XS", "S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         },
                         {
                             "name": "Tshirt2",
                             "price": 650,
                             "path": "tshirt2",
                             "images": ["/images/black_tshirt.jpg"],
-                            "available": false
+                            "available": false,
+                            "description": "Стильний та зручний одяг, ідеальний для повсякденного використання.",
+                            "composition": "95% бавовна, 5% еластан",
+                            "sizes": ["XS", "S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         },
                         {
                             "name": "Tshirt3",
                             "price": 700,
                             "path": "tshirt3",
                             "images": ["/images/black_tshirt.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Стильний та зручний одяг, ідеальний для повсякденного використання.",
+                            "composition": "95% бавовна, 5% еластан",
+                            "sizes": ["XS", "S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 },
@@ -43,14 +58,24 @@
                             "price": 900,
                             "path": "hoodie1",
                             "images": ["/images/black_hoodie.jpg"],
-                            "available": false
+                            "available": false,
+                            "description": "Теплий та комфортний одяг для прохолодної погоди.",
+                            "composition": "80% бавовна, 20% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         },
                         {
                             "name": "Hoodie2",
                             "price": 950,
                             "path": "hoodie2",
                             "images": ["/images/white_hoodie.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Теплий та комфортний одяг для прохолодної погоди.",
+                            "composition": "80% бавовна, 20% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 },
@@ -64,14 +89,24 @@
                             "price": 750,
                             "path": "zip1",
                             "images": ["/images/black_zip.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Зручна зіп-кофта для холодної погоди.",
+                            "composition": "75% бавовна, 25% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         },
                         {
                             "name": "Zip2",
                             "price": 800,
                             "path": "zip2",
                             "images": ["/images/black_zip.jpg"],
-                            "available": false
+                            "available": false,
+                            "description": "Зручна зіп-кофта для холодної погоди.",
+                            "composition": "75% бавовна, 25% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 }
@@ -92,14 +127,24 @@
                             "price": 620,
                             "path": "tshirtout1",
                             "images": ["/images/black_tshirt.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Стильний та зручний одяг, ідеальний для повсякденного використання.",
+                            "composition": "95% бавовна, 5% еластан",
+                            "sizes": ["XS", "S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         },
                         {
                             "name": "TshirtOut2",
                             "price": 680,
                             "path": "tshirtout2",
                             "images": ["/images/black_tshirt.jpg"],
-                            "available": false
+                            "available": false,
+                            "description": "Стильний та зручний одяг, ідеальний для повсякденного використання.",
+                            "composition": "95% бавовна, 5% еластан",
+                            "sizes": ["XS", "S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 },
@@ -112,15 +157,34 @@
                             "name": "HoodieOut1",
                             "price": 930,
                             "path": "hoodieout1",
-                            "images": ["/images/black_hoodie.jpg"],
-                            "available": false
+                            "images": [
+                                "/images/black_hoodie.jpg",
+                                "/images/black_hoodie.jpg",
+                                "/images/black_hoodie.jpg",
+                                "/images/black_hoodie.jpg",
+                                "/images/black_hoodie.jpg",
+                                "/images/black_hoodie.jpg",
+                                "/images/black_hoodie.jpg",
+                                "/images/black_hoodie.jpg"
+                            ],
+                            "available": false,
+                            "description": "Теплий та комфортний одяг для прохолодної погоди.",
+                            "composition": "80% бавовна, 20% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         },
                         {
                             "name": "HoodieOut2",
                             "price": 980,
                             "path": "hoodieout2",
                             "images": ["/images/white_hoodie.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Теплий та комфортний одяг для прохолодної погоди.",
+                            "composition": "80% бавовна, 20% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 },
@@ -134,7 +198,12 @@
                             "price": 770,
                             "path": "zipout1",
                             "images": ["/images/black_zip.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Зручна зіп-кофта для холодної погоди.",
+                            "composition": "75% бавовна, 25% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 }
@@ -155,14 +224,24 @@
                             "price": 610,
                             "path": "tshirt247_1",
                             "images": ["/images/black_tshirt.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Стильний та зручний одяг, ідеальний для повсякденного використання.",
+                            "composition": "95% бавовна, 5% еластан",
+                            "sizes": ["XS", "S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         },
                         {
                             "name": "Tshirt247-2",
                             "price": 665,
                             "path": "tshirt247_2",
                             "images": ["/images/black_tshirt.jpg"],
-                            "available": false
+                            "available": false,
+                            "description": "Стильний та зручний одяг, ідеальний для повсякденного використання.",
+                            "composition": "95% бавовна, 5% еластан",
+                            "sizes": ["XS", "S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 },
@@ -176,7 +255,12 @@
                             "price": 910,
                             "path": "hoodie247_1",
                             "images": ["/images/white_hoodie.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Теплий та комфортний одяг для прохолодної погоди.",
+                            "composition": "80% бавовна, 20% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 },
@@ -190,14 +274,24 @@
                             "price": 790,
                             "path": "zip247_1",
                             "images": ["/images/black_zip.jpg"],
-                            "available": false
+                            "available": false,
+                            "description": "Зручна зіп-кофта для холодної погоди.",
+                            "composition": "75% бавовна, 25% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         },
                         {
                             "name": "Zip247-2",
                             "price": 820,
                             "path": "zip247_2",
                             "images": ["/images/black_zip.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Зручна зіп-кофта для холодної погоди.",
+                            "composition": "75% бавовна, 25% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 }
@@ -218,14 +312,24 @@
                             "price": 605,
                             "path": "tshirtmen1",
                             "images": ["/images/black_tshirt.jpg"],
-                            "available": false
+                            "available": false,
+                            "description": "Стильний та зручний одяг, ідеальний для повсякденного використання.",
+                            "composition": "95% бавовна, 5% еластан",
+                            "sizes": ["XS", "S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         },
                         {
                             "name": "TshirtMen2",
                             "price": 690,
                             "path": "tshirtmen2",
                             "images": ["/images/black_tshirt.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Стильний та зручний одяг, ідеальний для повсякденного використання.",
+                            "composition": "95% бавовна, 5% еластан",
+                            "sizes": ["XS", "S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 },
@@ -239,7 +343,12 @@
                             "price": 940,
                             "path": "hoodiemen1",
                             "images": ["/images/black_hoodie.jpg"],
-                            "available": true
+                            "available": true,
+                            "description": "Теплий та комфортний одягдля прохолодної погоди.",
+                            "composition": "80% бавовна, 20% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 },
@@ -253,26 +362,16 @@
                             "price": 780,
                             "path": "zipmen1",
                             "images": ["/images/black_zip.jpg"],
-                            "available": true
-                        },
-                        {
-                            "name": "ZipMen2",
-                            "price": 810,
-                            "path": "zipmen2",
-                            "images": ["/images/black_zip.jpg"],
-                            "available": false
+                            "available": false,
+                            "description": "Зручна зіп-кофта для холодної погоди.",
+                            "composition": "75% бавовна, 25% поліестер",
+                            "sizes": ["S", "M", "L", "XL"],
+                            "type": ["regular", "oversize"],
+                            "color": ["чорний", "білий"]
                         }
                     ]
                 }
             ]
-        }
-    ],
-    "users": [
-        {
-            "username": "user123",
-            "email": "user@example.com",
-            "password": "hashed_password_here",
-            "phone": "+380991234567"
         }
     ]
 }

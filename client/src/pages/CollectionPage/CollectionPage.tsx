@@ -1,28 +1,9 @@
-import { useEffect } from "react";
-import { fetchCollections } from "../../store/slices/collections.slice";
-import { useAppDispatch } from "../../hooks";
-import { Link, useParams } from "react-router";
-import { useSelector } from "react-redux";
-import { RootState } from "../../types/reduxtypes";
-import { useLocation } from "react-router";
+import { Link } from "react-router";
+
+import { useProductTree } from "../../hooks/useProductTree";
 
 const CollectionPage = () => {
-    const { collectionName } = useParams();
-
-    const dispatch = useAppDispatch();
-    const location = useLocation();
-
-    const { collections } = useSelector(
-        (state: RootState) => state.collections
-    );
-
-    const collection = collections.find(
-        (collection) => collection.path === `${collectionName}`
-    );
-
-    useEffect(() => {
-        dispatch(fetchCollections());
-    }, []);
+    const { collection } = useProductTree();
 
     if (!collection) {
         return (

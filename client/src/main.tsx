@@ -14,7 +14,8 @@ import Cart from "./pages/Cart/Cart";
 import Likes from "./pages/Likes/Likes";
 import Account from "./pages/Account/Account";
 import CollectionPage from "./pages/CollectionPage/CollectionPage";
-import CategoryPage from "./CategoryPage/CategoryPage";
+import CategoryPage from "./components/CategoryPage/CategoryPage";
+import ProductPage from "./components/ProductPage/ProductPage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -24,6 +25,10 @@ const router = createBrowserRouter(
                 <Route
                     path=":collectionName/:categoryName"
                     element={<CategoryPage />}
+                />
+                <Route
+                    path=":collectionName/:categoryName/:productName"
+                    element={<ProductPage />}
                 />
                 <Route path="cart" element={<Cart />} />
                 <Route path="likes" element={<Likes />} />
