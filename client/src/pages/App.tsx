@@ -9,6 +9,7 @@ import { ICollection } from "../types/dbtypes";
 import { Link, Outlet, useLocation } from "react-router";
 import Container from "../components/Container/Container";
 import Footer from "../components/Footer/Footer";
+import { fetchUsers } from "../store/slices/user.slice";
 
 function App() {
     const dispatch = useAppDispatch();
@@ -23,6 +24,7 @@ function App() {
 
     useEffect(() => {
         dispatch(fetchCollections());
+        dispatch(fetchUsers());
     }, [dispatch]);
 
     const isHomePage = location.pathname === "/";
@@ -40,7 +42,7 @@ function App() {
             <Container>
                 {isHomePage ? (
                     <div className="collections-list">
-                        <h3 className="mt-[30px] text-2xl uppercase font-bold">
+                        <h3 className="mt-[30px] text-xl uppercase font-bold">
                             Колекції
                         </h3>
                         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-[30px]">

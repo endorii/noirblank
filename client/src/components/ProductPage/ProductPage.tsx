@@ -1,4 +1,5 @@
 import { useProductTree } from "../../hooks/useProductTree";
+import HeartIcon from "../../assets/svg/heart.svg?react";
 
 const ProductPage = () => {
     const { collection, category, product } = useProductTree();
@@ -13,8 +14,18 @@ const ProductPage = () => {
 
     return (
         <div className="flex mt-[30px] gap-[70px] items-center">
-            <div className="flex gap-[10px]">
-                <img src={product.images[0]} alt="" className="max-w-[700px]" />
+            <div className="flex gap-[10px] relative">
+                <div className="relative">
+                    <button className="absolute top-0 right-0 group flex text-xs items-center gap-[20px] border border-transparent hover:text-black hover:border-black hover:bg-white bg-black text-white p-[15px] transition-all duration-300 cursor-pointer disabled:bg-gray-200 disabled:text-gray-400 disabled:border-0 disabled:cursor-not-allowed">
+                        <HeartIcon className="w-[25px] stroke-white group-hover:stroke-black transition-all duration-300" />
+                    </button>
+                    <img
+                        src={product.images[0]}
+                        alt=""
+                        className="max-w-[700px]"
+                    />
+                </div>
+
                 <ul className="flex flex-col w-[150px] gap-[10px] overflow-y-scroll max-h-[700px]">
                     {product.images.map((image, i) => {
                         return (
@@ -33,7 +44,7 @@ const ProductPage = () => {
                 <div className="flex justify-between">
                     <h3 className="text-2xl">{product.name}</h3>
                     <div className="text-3xl font-semibold mr-[30%]">
-                        {product.price}$
+                        {product.price} грн.
                     </div>
                 </div>
                 <div className="text-sm text-gray-500">

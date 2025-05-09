@@ -24,3 +24,23 @@ export interface IProduct {
     type: string[];
     color: string[];
 }
+
+export interface IUser {
+    username: string;
+    email: string;
+    password: string;
+    phone: string;
+    cart: ICartItem[];
+    favorites: IFavoriteItem[];
+}
+
+export interface ICartItem {
+    productPath: IProduct["path"];
+    quantity: number;
+    size: string;
+    color: string;
+}
+
+export interface IFavoriteItem {
+    productPath: IProduct["path"];
+}

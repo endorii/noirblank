@@ -15,7 +15,7 @@ const CollectionPage = () => {
 
     return (
         <div>
-            <h3 className="mt-[30px] text-2xl uppercase font-bold">
+            <h3 className="mt-[30px] text-xl uppercase font-bold">
                 Доступні категорії:
             </h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[20px] mt-[30px]">
