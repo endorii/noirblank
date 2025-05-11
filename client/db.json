@@ -374,11 +374,21 @@
             ]
         }
     ],
-    "users": {
-        "username": "user123",
+    "user": {
+        "username": "Петро Петренко",
         "email": "user@example.com",
         "password": "hashed_password_here",
         "phone": "+380991234567",
+        "shippingAddress": {
+            "recipient": "Петро (Петрович) Петренко",
+            "country": "Україна",
+            "region": "Київська область",
+            "city": "Київ",
+            "postalCode": "01001",
+            "street": "вул. Хрещатик",
+            "building": "22",
+            "apartment": "15"
+        },
         "cart": [
             {
                 "productPath": "tshirt1",

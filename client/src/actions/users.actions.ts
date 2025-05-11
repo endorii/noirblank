@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const getUsersForTest = async () => {
     try {
-        const response = await axios.get(`http://localhost:3000/users`);
+        const response = await axios.get(`http://localhost:3000/user`);
         return response.data;
     } catch (e) {
         console.log(e);

@@ -30,8 +30,20 @@ export interface IUser {
     email: string;
     password: string;
     phone: string;
+    shippingAddress: IUserShippingAdress;
     cart: ICartItem[];
     favorites: IFavoriteItem[];
+}
+
+export interface IUserShippingAdress {
+    recipient: string;
+    country: string;
+    region: string;
+    city: string;
+    postalCode: string;
+    street: string;
+    building: string;
+    apartment: string;
 }
 
 export interface ICartItem {
