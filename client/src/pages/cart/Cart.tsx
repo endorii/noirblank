@@ -38,8 +38,8 @@ const Cart = () => {
 
     if (!cartItems || cartItems.length === 0) {
         return (
-            <div className="pt-[130px] text-center text-[50px]">
-                Товарів не знайдено :(
+            <div className="pt-[30px] text-center text-[50px]">
+                Увійдіть щоб мати можливість додавати товари у "Корзину"
             </div>
         );
     }

@@ -30,17 +30,21 @@ const Header = () => {
                 <ul className="flex gap-[30px]">
                     <li>
                         <Link to="cart" className="relative">
-                            <div className="absolute top-[-10px] right-[-10px] bg-black w-[20px] h-[20px] flex items-center justify-center text-[8px] font-bold rounded-[50%] border-2 border-white text-white">
-                                {user?.cart.length}
-                            </div>
+                            {user ? (
+                                <div className="absolute top-[-10px] right-[-10px] bg-black w-[20px] h-[20px] flex items-center justify-center text-[8px] font-bold rounded-[50%] border-2 border-white text-white">
+                                    {user?.cart.length}
+                                </div>
+                            ) : null}
                             <CartIcon className="stroke-black w-6 h-6" />
                         </Link>
                     </li>
                     <li>
                         <Link to="likes" className="relative">
-                            <div className="absolute top-[-10px] right-[-10px] bg-black w-[20px] h-[20px] flex items-center justify-center text-[8px] font-bold rounded-[50%] border-2 border-white text-white">
-                                {user?.favorites.length}
-                            </div>
+                            {user ? (
+                                <div className="absolute top-[-10px] right-[-10px] bg-black w-[20px] h-[20px] flex items-center justify-center text-[8px] font-bold rounded-[50%] border-2 border-white text-white">
+                                    {user?.favorites.length}
+                                </div>
+                            ) : null}
                             <HeartIcon className="stroke-black w-6 h-6" />
                         </Link>
                     </li>

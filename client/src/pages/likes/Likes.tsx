@@ -31,8 +31,8 @@ const Likes = () => {
 
     if (!favouritesItems || favouritesItems.length === 0) {
         return (
-            <div className="pt-[130px] text-center text-[50px]">
-                Товарів не знайдено :(
+            <div className="pt-[30px] text-center text-[50px]">
+                Увійдіть щоб мати можливість додавати товари у "Вподобане"
             </div>
         );
     }

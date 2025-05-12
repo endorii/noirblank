@@ -16,6 +16,7 @@ import Account from "./pages/Account/Account";
 import CollectionPage from "./pages/CollectionPage/CollectionPage";
 import CategoryPage from "./components/CategoryPage/CategoryPage";
 import ProductPage from "./components/ProductPage/ProductPage";
+import Login from "./components/Login/Login";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
                 <Route path="cart" element={<Cart />} />
                 <Route path="likes" element={<Likes />} />
                 <Route path="account" element={<Account />} />
+                <Route path="login" element={<Login />} />
             </Route>
         </>
     )
